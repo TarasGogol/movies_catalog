@@ -7,11 +7,10 @@
     <title>Movies catalog</title>
 
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div class="wrapper" style="background-image: url(./img/back.jpg);">
+    <div class="wrapper">
         <div class="back">
             <nav class="nav">               
                     <div class="nav_row">
@@ -31,7 +30,7 @@
                         </div>
                     </div>
             </nav>
-            <div class="movies_container">
+            <!-- <div class="movies_container none">
                 <h1 class="name_movie">Star wars</h1>
                 <h3 class="title_movie">THE RISE OF SKYWALKER</h3>
                 <p class="desc">The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the Sith reaches its peak bringing the Skywalker saga to its end. </p>
@@ -40,29 +39,28 @@
                     <button class="watch">Watch now</button>
                     <button class="trailer">Trailer</button>
                 </div>
-            </div>
+            </div> -->
 
             <h1 class="genres_sect">Popular movies</h1>
 
             <div class="cards swiper"> 
-                <div class="swiper-wrapper">
-                    <div class="card swiper-slide"><img src="./img/card-1.png" alt=""></div>
-                    <div class="card swiper-slide active_card"><img src="./img/card-2.png" alt=""></div>
-                    <div class="card swiper-slide"><img src="./img/card-3.png" alt=""></div>
-                    <div class="card swiper-slide"><img src="./img/card-4.png" alt=""></div>
-                    <div class="card swiper-slide"><img src="./img/card-5.png" alt=""></div>
-                    <div class="card swiper-slide"><img src="./img/card-6.png" alt=""></div>
+                <div class="loader-wrapper none">
+                    <div class="lds-dual-ring"></div>
+                </div>
+                <div class="swiper-wrapper films">
+                    <!-- <div class="card swiper-slide"><img src="./img/card-1.png" alt=""></div> -->
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+                
             </div>
-
+            
+        
         </div>
     </div>
 
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

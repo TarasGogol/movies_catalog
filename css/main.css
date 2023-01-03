@@ -1,10 +1,14 @@
 @import './reset.css';
+@import "./loader.css";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Outfit:wght@500;600&family=Poppins:wght@600&display=swap');
 
 :root{
     --oswald: 'Oswald', sans-serif;
     --outfit: 'Outfit', sans-serif;
     --poppins: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
 }
 .wrapper {
     height: 100vh;
@@ -60,8 +64,8 @@
     color: white;
     font-family: var(--oswald);
     
-    max-width: 514px;
-    max-height: 424px;
+    max-width: 800px;
+    max-height: 504px;
 
     margin: 7px 0px 45px 88px;
 }
@@ -152,6 +156,10 @@
 
     margin: 0px 107px 100px 45px;
 }
+.films{
+    display: flex;
+    column-gap: 15px;
+}
 .btnPrev{
     content: "";
     position: absolute;
@@ -171,8 +179,8 @@
     height: 33px;
 }
 .card {
-    max-width: 184px;
-    max-height: 254px;
+    max-width: 172px;
+    max-height: 274px;
     object-fit: contain;
     border-radius: 24px;
     cursor: pointer;
@@ -183,4 +191,15 @@
     transform: scale(1.117);
     transition: all 0.25s;
     border-radius: 24px;
+}
+.card img{
+    border-radius: 24px;
+}
+.loader-wrapper{
+    padding: 100px 0;
+    position: absolute;
+    text-align: center;
+}
+.none{
+    display: none;
 }
